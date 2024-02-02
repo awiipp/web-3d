@@ -31,7 +31,7 @@ tulis perintah running project di terminal.
 ```
 Buka link yang dikasih, sorot link terus `ctrl + klik kiri`
 
-> Bang kok error? Coba cek [disini](#bang-kok-kode-aku-error-bang?).
+> Bang kok error? Coba cek [disini](#bang-kok-kode-aku-error-bang).
 
 ## Penjelasan Code
 Di source code udah dikasih comment penjelasan, tapi di sini dijelasin lagi bagian per bagian biar jelas.
