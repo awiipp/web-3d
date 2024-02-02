@@ -1,11 +1,11 @@
 ## Download Folder
-Download folder
+Download folder.
 - Klik tombol "Code" di bagian atas halaman.
 - Pilih opsi "Download ZIP".
 - Ekstrak folder ZIP untuk mendapatkan salinan projek.
 
 ## Download Node Modules
-Karena gak bisa langsung dijalankan, jadi perlu download file module dulu. Buka folder 'Project-Web-3D' (awas salah) di VSCode, buka terminal, terus...
+Karena gak bisa ngirim folder node_module ke github, jadi perlu download file-file module dulu. Buka folder 'Project-Web-3D' (awas salah) di VSCode, buka terminal, terus...
 - di terminal, jalankan npm init.
   ```Shell
   npm init
