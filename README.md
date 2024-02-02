@@ -31,7 +31,7 @@ tulis perintah running project di terminal.
 ```
 Buka link yang dikasih, sorot link terus `ctrl + klik kiri`
 
-> Bang kok error? Coba cek [disini](#bang-kok-kode-aku-error-bang).
+> Bang kok error? Coba cek [di sini](#bang-kok-kode-aku-error-bang).
 
 ## Penjelasan Code
 Di source code udah dikasih comment penjelasan, tapi di sini dijelasin lagi bagian per bagian biar jelas.
@@ -194,6 +194,5 @@ Di source code udah dikasih comment penjelasan, tapi di sini dijelasin lagi bagi
 
 ## Bang kok kode aku error bang?
 Kalo error, KEMUNGKINAN karena:
-- Belum download node.js. Coba cek udah install node atau belum. Buka command/windows prompt/power shell, ketik 'node -v'.
-- Salah buka folder. Abis download repo ini, nanti ada folder 'web-3d-main.zip' terus di dalamnya ada folder 'web-3d-main'. Buka foldernya, nanti ada folder 'Project-Web-3D', ini folder yang harus dibuka.
-tetep error? Tanyain langsung ke Sultan/Amri.
+- Belum download node.js. Coba cek udah install node atau belum. Buka command prompt/power shell, ketik 'node -v'. Kalau tampil versi node.js, berarti udah diinstall.
+- Salah buka folder. Abis download repositor ini, nanti ada folder 'web-3d-main.zip' terus di dalamnya ada folder 'web-3d-main'. Buka foldernya, nanti ada folder 'Project-Web-3D', ini folder yang harus dibuka.
