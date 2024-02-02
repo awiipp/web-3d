@@ -5,8 +5,8 @@ Download folder:
 - Ekstrak folder ZIP untuk mendapatkan salinan projek.
 
 ## Download Node Modules
-Karena gak bisa langsung dijalankan, jadi perlu download file module dulu. Buka folder 'Project-Web-3D' (di dalam folder web-3d-main, Jangan salah) di VSCode, buka terminal, ikuti langkah berikut.
-- di terminal, jalankan perintah:
+Karena gak bisa langsung dijalankan, jadi perlu download file module dulu. Buka folder 'Project-Web-3D' (awas salah) di VSCode, buka terminal, ikuti langkah berikut.
+- di terminal, jalankan perintah
   ```Shell
   npm init
 
@@ -29,9 +29,10 @@ Di terminal, jalankan perintah:
   ```Shell
   npm run dev
 ```
-Buka link yang diberi, sorot link lalu `ctrl + klik kiri`.
+Buka link yang dikasih, sorot link terus `ctrl + klik kiri`
 
 ## Penjelasan Code
+Penjelasan kode bagian per bagian.
 - Import library.
   ```js
   // Kode ini memanggil library yang dibutuhkan untuk menjalankan projek.
@@ -99,7 +100,7 @@ Buka link yang diberi, sorot link lalu `ctrl + klik kiri`.
   // membuat geometry sphere (atur radius bola)
   const sphereGeometry = new THREE.SphereGeometry(1, 30, 30);
   
-  membuat material sphere (mengatur warna bola)
+  // membuat material sphere (mengatur warna bola)
   const sphereMaterial = new THREE.MeshBasicMaterial({
     color: 0x3c0753,
   });
@@ -108,4 +109,27 @@ Buka link yang diberi, sorot link lalu `ctrl + klik kiri`.
   const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
   sphere.position.set(3, 3, 0);
   scene.add(sphere);
+  ```
+
+- Membuat helper.
+  ```js
+  // Membuat helper (fungsi helper untuk membantu melihat posisi object)
+  // x = merah
+  // y = biru
+  // z = hijau
+  const axesHelper = new THREE.AxesHelper(3);
+  scene.add(axesHelper);
+  const gridHelper = new THREE.GridHelper(20);
+  scene.add(gridHelper);
+  ```
+
+- Membuat orbit control.
+  ```js
+  // set posisi camera
+  camera.position.set(-10, 30, 30);
+  
+  // buat orbit control (untuk mengendalikan kamera)
+  const orbit = new OrbitControls(camera, canvas);
+  
+  orbit.update();
   ```
